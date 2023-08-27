@@ -1,5 +1,7 @@
-
-import NewzNav from './components/NewzNav';
+import './App.css';
+import NewzCard from './components/NewzCard';
+import NewzNav from 
+'./components/NewzNav';
 
 function App() {
 
