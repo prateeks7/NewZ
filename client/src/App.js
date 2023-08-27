@@ -1,5 +1,4 @@
 import './App.css';
-import NewzCard from './components/NewzCard';
 import NewzNav from 
 './components/NewzNav';
 
