@@ -143,10 +143,10 @@ class NewzNav extends React.Component {
                 </div>
                 <div>
                     <div className="sizedBox"></div>
-                    <div data-aos="fade-up" data-aos-delay="750" className={this.state.techAct}><NewzCard url="https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=5dcfad53dc434ce0b65aa28c4951f114"></NewzCard></div>
-                    <div data-aos="fade-up" data-aos-delay="750" className={this.state.inAct}><NewzCard url="https://newsapi.org/v2/top-headlines?country=us&apiKey=5dcfad53dc434ce0b65aa28c4951f114"></NewzCard></div>
-                    <div data-aos="fade-up" data-aos-delay="750" className={this.state.gloAct}><NewzCard url="https://newsapi.org/v2/top-headlines?language=en&apiKey=5dcfad53dc434ce0b65aa28c4951f114"></NewzCard></div>
-                    <div data-aos="fade-up" data-aos-delay="750" className={this.state.finAct}><NewzCard url="https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=5dcfad53dc434ce0b65aa28c4951f114"></NewzCard></div>
+                    <div data-aos="fade-up" data-aos-delay="750" className={this.state.techAct}><NewzCard url="https://news-api14.p.rapidapi.com/top-headlines?sources=techcrunch&apiKey=5dcfad53dc434ce0b65aa28c4951f114"></NewzCard></div>
+                    <div data-aos="fade-up" data-aos-delay="750" className={this.state.inAct}><NewzCard url="https://news-api14.p.rapidapi.com/top-headlines?country=us&apiKey=5dcfad53dc434ce0b65aa28c4951f114"></NewzCard></div>
+                    <div data-aos="fade-up" data-aos-delay="750" className={this.state.gloAct}><NewzCard url="https://news-api14.p.rapidapi.com/top-headlines?language=en&apiKey=5dcfad53dc434ce0b65aa28c4951f114"></NewzCard></div>
+                    <div data-aos="fade-up" data-aos-delay="750" className={this.state.finAct}><NewzCard url="https://news-api14.p.rapidapi.com/top-headlines?country=us&category=business&apiKey=5dcfad53dc434ce0b65aa28c4951f114"></NewzCard></div>
                 </div>
             </div>
         );
