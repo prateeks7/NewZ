@@ -5,13 +5,19 @@ import axios from 'axios';
 
 
 export function getNews(address) {
-  return axios({
+  try {
+    const response = axios({
       method: 'GET',
-    //   params: payload,
-    //   headers: {Authorization: `${user.token}`},
+      //   params: payload,
+      //   headers: {Authorization: `${user.token}`},
       url: address,
-  });
+    });
+    return response;
+  }
+  catch (err) {
+    console.log(err);
+  }
 }
 
-   
+
 

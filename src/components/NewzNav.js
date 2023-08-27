@@ -127,7 +127,7 @@ console.log(scrollTop,"scrollTop");
             <td className="navTD" colSpan={3}>  
                 <div className= {(showNav ? 'show' : '') + 'collapse navbar-collapse justify-content-sm-center'} id="navbarCollapse">
                 <ul className="nav navUL">
-                    <li className="nav-item navLi" align="center" ><a className={"nav-link "+  this.state.inActive} onClick={this.indiaNews} >India News</a></li>
+                    <li className="nav-item navLi" align="center" ><a className={"nav-link "+  this.state.inActive} onClick={this.indiaNews} >US News</a></li>
                     <li className="nav-item navLi" align="center" ><a className={"nav-link "+  this.state.gloActive}  onClick={this.globalNews}>Global News</a></li>
                     <li className="nav-item navLi" align="center" ><a className={"nav-link "+  this.state.techActive} onClick={this.techNews} >Tech News</a></li>
                     <li className="nav-item navLi" align="center" ><a className={"nav-link "+  this.state.finActive}  onClick={this.financeNews}>Business News</a></li>
@@ -145,9 +145,9 @@ console.log(scrollTop,"scrollTop");
     <div>
     <div className="sizedBox"></div>
       <div data-aos="fade-up" data-aos-delay="750" className={this.state.techAct}><NewzCard url="https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=5dcfad53dc434ce0b65aa28c4951f114"></NewzCard></div>
-      <div  data-aos="fade-up" data-aos-delay="750" className={this.state.inAct}><NewzCard url="https://newsapi.org/v2/top-headlines?country=in&apiKey=5dcfad53dc434ce0b65aa28c4951f114"></NewzCard></div>
+      <div  data-aos="fade-up" data-aos-delay="750" className={this.state.inAct}><NewzCard url="https://newsapi.org/v2/top-headlines?country=us&apiKey=5dcfad53dc434ce0b65aa28c4951f114"></NewzCard></div>
       <div  data-aos="fade-up" data-aos-delay="750" className={this.state.gloAct}><NewzCard url="https://newsapi.org/v2/top-headlines?language=en&apiKey=5dcfad53dc434ce0b65aa28c4951f114"></NewzCard></div>
-      <div data-aos="fade-up" data-aos-delay="750"  className={this.state.finAct}><NewzCard url="https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=5dcfad53dc434ce0b65aa28c4951f114"></NewzCard></div>
+      <div data-aos="fade-up" data-aos-delay="750"  className={this.state.finAct}><NewzCard url="https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=5dcfad53dc434ce0b65aa28c4951f114"></NewzCard></div>
     </div>
     </div>
     );

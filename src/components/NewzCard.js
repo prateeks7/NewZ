@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {getNews} from '../actions/DataCall.js';
 import './NewzCard.css';
+import logo from './whiteglobe.gif';
+
 
 
 class NewzCard extends Component {
@@ -31,15 +33,15 @@ class NewzCard extends Component {
     
     return (
       <div>
-        <div className="container colo">
+        <div className="container-fluid">
         <div className="row">
 
           {
               data && data.length>0 && data.map((obj,index)=>(
                  <>
-                 <div className="col-sm-6 mt-5">
-          <div className="card">
-            <img className="card-img-top" src={obj.urlToImage} alt="Card image"/>
+                 <div className="col-sm-6 col-md-4 col-xl-3 col-xxl-3 mt-5">
+          <div className="card cardCss">
+            <img className="card-img-top" src={obj.urlToImage == null ? logo : obj.urlToImage} alt="Card image"/>
             <div className="card-body">
               <h5 className="card-title">{obj.title}</h5>
               <p className="card-text">{obj.description}</p>
