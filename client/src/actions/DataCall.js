@@ -8,7 +8,7 @@ export async function getNews(address) {
   try {
     const response = await axios({
       method: 'POST',
-      url: 'http://localhost:2000/api/v1/newz',
+      url: 'https://newz-5c4l.onrender.com/api/v1/newz',
       headers: {
         'Content-Type': 'application/json'
       },
