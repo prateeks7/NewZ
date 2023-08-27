@@ -26,6 +26,7 @@ class NewzCard extends Component {
         data: res.articles
       });
     });
+    if(data.length != 0)
     this.setState({ loading: false });
   }
   render() {
