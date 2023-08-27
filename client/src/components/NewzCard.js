@@ -14,20 +14,22 @@ class NewzCard extends Component {
     this.state = {
       data: [],
       urlLink: this.props.url,
-      loading: false
+      loading: true
     };
 
   }
 
   componentDidMount() {
-    this.setState({ loading: true });
+    if (this.state.data.length == 0)
+      this.setState({ loading: true });
     getNews(this.state.urlLink).then((res) => {
       this.setState({
         data: res.articles
       });
-    });
-    if(data.length != 0)
-    this.setState({ loading: false });
+    }).then(() => {
+      this.setState({ loading: false });
+    }
+    );
   }
   render() {
 
