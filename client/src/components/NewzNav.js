@@ -130,9 +130,9 @@ class NewzNav extends React.Component {
                 </div>
                 <div>
                     <div className="sizedBox"></div>
-                    <div data-aos="fade-up" data-aos-delay="750" className={this.state.techAct}><NewzCard url="https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey="></NewzCard></div>
                     <div data-aos="fade-up" data-aos-delay="750" className={this.state.inAct}><NewzCard url="https://newsapi.org/v2/top-headlines?country=us&apiKey="></NewzCard></div>
                     <div data-aos="fade-up" data-aos-delay="750" className={this.state.gloAct}><NewzCard url="https://newsapi.org/v2/top-headlines?language=en&apiKey="></NewzCard></div>
+                    <div data-aos="fade-up" data-aos-delay="750" className={this.state.techAct}><NewzCard url="https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey="></NewzCard></div>
                     <div data-aos="fade-up" data-aos-delay="750" className={this.state.finAct}><NewzCard url="https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey="></NewzCard></div>
                 </div>
             </div>
